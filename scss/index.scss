@@ -30,7 +30,6 @@ header img{
 nav{
 	width: 100%;
 	background: $bg-color;
-	border:black 1px solid;
 	z-index: 5;
 	top:180px;
 }
@@ -47,17 +46,20 @@ nav a:first-child{
 		margin-left: 12%;
 
 }
-.content1{
+.featured{
 	width: 100%;
 	background-color: $bg-color;
-	border: 1px solid black;
 	min-width: 15%;
-	margin: 0px;
 	padding: 0px;
 }
-.sale >.row> .panel{
+.content1	{
+	width: 100%;
 	background-color: $bg-color;
-	border:black 1px solid;
+	min-width: 15%;
+	padding: 0px;
+}
+.events{
+	background-color: $bg-color;	
 }
 
 .content1 p{
@@ -67,7 +69,6 @@ nav a:first-child{
 .bestsellers{
 	
 	background-color: $bg-color;
-	border: 1px solid black;
 	-webkit-box-sizing: border-box;
 	min-width: 15%;
 	z-index:3;
@@ -81,15 +82,12 @@ nav a:first-child{
 }
 .left-book{
 	
-	border: 1px black solid;
 }
 .right-book{
 
-	border: 1px black solid;
 
 }
 .mid-book{
-	border: 1px black solid;
 
 }
 h3{
