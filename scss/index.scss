@@ -52,6 +52,15 @@ nav a:first-child{
 	min-width: 15%;
 	padding: 0px;
 }
+.featured img{
+	width:50%;
+	height:50%;
+	position: relative;
+	left: 25%;
+}
+.featured p{
+	text-align: center;
+}
 .content1	{
 	width: 100%;
 	background-color: $bg-color;
