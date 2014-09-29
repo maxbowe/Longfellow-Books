@@ -1,6 +1,6 @@
 $bg-color: #EBD8BA;
 body{
-	font-family: "Aparajita Bold";
+	font-family: "Kokila Regular";
 	background-color: #FFFFFF;
 }
 header{
@@ -32,12 +32,11 @@ nav{
 	background: $bg-color;
 	z-index: 5;
 	top:180px;
-	height: 100%;
 }
 nav a{
-	font-size:24px;
+	font-size:20px;
 	color:black;
-	font-family: "Vani","Times New Roman", Arial;
+	font-family: "Futura","Times New Roman", Arial;
 }
 nav a:hover{
 	color:  #E6E5D3;
