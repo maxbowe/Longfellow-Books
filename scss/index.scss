@@ -1,10 +1,17 @@
 $bg-color: #EBD8BA;
+$gold: #edb745;
 body{
 	font-family: "Aparajita Bold";
-	background-color: #FFFFFF;
+		font-family: 'Libre Baskerville', serif;
+
+	color:#363636;
+	background-color: #e3e3e3;
+	background-image:url() ;
+
 }
 header{
-	background-color: #FFFFFF;
+
+	background-color: #e3e3e3;
 	width:100%;
 	height: auto;
 	z-index: 1;
@@ -29,7 +36,7 @@ header img{
 
 nav{
 	width: 100%;
-	background: $bg-color;
+	background: $gold;
 	z-index: 5;
 	top:180px;
 	height: 100%;
@@ -38,6 +45,7 @@ nav a{
 	font-size:24px;
 	color:black;
 	font-family: "Vani","Times New Roman", Arial;
+	font-family: 'Libre Baskerville', serif;
 }
 nav a:hover{
 	color:  #E6E5D3;
@@ -50,6 +58,7 @@ nav a:first-child{
 .featured{
 	width: 100%;
 	background-color: $bg-color;
+
 	min-width: 15%;
 	padding: 0px;
 }
@@ -61,6 +70,7 @@ nav a:first-child{
 }
 .featured p{
 	text-align: center;
+
 }
 .content1	{
 	width: 100%;
@@ -70,12 +80,19 @@ nav a:first-child{
 }
 .events{
 	background-color: $bg-color;	
+
 }
 
 .content1 p{
 	margin: 5px;
 }
-
+.search{
+	background-color: white;
+	border: 1px black solid;
+}
+.bar{
+	background-color:$gold; 	
+}
 .bestsellers{
 	
 	background-color: $bg-color;
@@ -111,4 +128,7 @@ footer{
 	height:50px;
 	width:100%;
 	z-index: 5;
+	background-color: white;
+	font-style: bold;
+
 }
