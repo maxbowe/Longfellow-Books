@@ -72,6 +72,22 @@ nav a:first-child{
 	text-align: center;
 
 }
+.feature-bar {
+	width: 100%;
+	background-color: $bg-color;
+	min-width: 15%;
+	padding: 0px;
+}
+.feature-bar img{
+	width: 50%;
+	height: 50%;
+	position: relative;
+	left: 25%; 
+}
+.feature-bar p{
+	font-size: .75em;
+	text-align: center;
+}
 .content1	{
 	width: 100%;
 	background-color: $bg-color;
