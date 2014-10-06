@@ -37,18 +37,21 @@ header img{
 
 
 nav{
-	padding-top: 1%;
-	width: 100%;
-	background: $gold;
+	
 	z-index: 5;
-	top:180px;
 	height: 100%;
 	font-family: $scriptfont;
+	color:$gold;
+	background-color: black;
 }
 nav a{
 	font-size:24px;
-	color:black;
-	
+	color:$gold;
+
+}
+nav li{
+	font-size:24px;
+	color:$gold;
 }
 nav a:hover{
 	color:  #E6E5D3;
