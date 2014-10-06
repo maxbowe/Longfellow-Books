@@ -1,8 +1,10 @@
 $bg-color: #EBD8BA;
 $gold: #edb745;
+$scriptfont: "Libre Baskerville", serif;
+$textfont: "Aparajita Bold";
 body{
-	font-family: "Aparajita Bold";
-		font-family: 'Libre Baskerville', serif;
+	font-family: $textfont;
+		
 
 	color:#363636;
 	background-color: #e3e3e3;
@@ -35,32 +37,36 @@ header img{
 
 
 nav{
+	padding-top: 1%;
 	width: 100%;
 	background: $gold;
 	z-index: 5;
 	top:180px;
 	height: 100%;
+	font-family: $scriptfont;
 }
 nav a{
 	font-size:24px;
 	color:black;
-	font-family: "Vani","Times New Roman", Arial;
-	font-family: 'Libre Baskerville', serif;
+	
 }
 nav a:hover{
 	color:  #E6E5D3;
 
 }
 nav a:first-child{
-		margin-left: 12%;
+		margin-left: 8%;
 
 }
 .featured{
 	width: 100%;
 	background-color: $bg-color;
-
 	min-width: 15%;
 	padding: 0px;
+}
+.ebooks{
+	font-family: $textfont;
+	background-color: $bg-color;
 }
 .featured img{
 	width:50%;
@@ -88,23 +94,65 @@ nav a:first-child{
 	font-size: .75em;
 	text-align: center;
 }
-.content1	{
+.bookclub{
 	width: 100%;
 	background-color: $bg-color;
 	min-width: 15%;
 	padding: 0px;
 }
+.bookclub p{
+	margin: 5px;
+}
+.bookclub img{
+	width: 40%;
+	height: 40%;
+	font-size: 500px;
+}
+.clubtitle{
+	font-size: .75em;
+	font-style: bold;
+}
 .events{
 	background-color: $bg-color;	
 
+
+}
+.events p{
+	margin: 5%;
+}
+.events img{
+	height: 60%;
+	width: 60%;
+}
+.bookclubs{
+
+}
+.event{
+	background-color: $bg-color;	
+
+	
+}
+.event p{
+	margin: 1%;
+}
+.event img{
+	height: 100%;
+	width: 100%;
+}
+.about{
+	background-color: $bg-color;
 }
 
-.content1 p{
-	margin: 5px;
+.contact-info{
+	background-color: $bg-color;
+	font-family: $textfont;
+
 }
 .search{
 	background-color: white;
 	border: 1px black solid;
+
+	font-family: $scriptfont;
 }
 .bar{
 	background-color:$gold; 	
@@ -123,15 +171,19 @@ nav a:first-child{
 .top10{
 	font-size:12px;
 }
-.left-book{
-	
+.left-bar{
+	background-color: $bg-color;
 }
-.right-book{
+.right-bar{
+	background-color: $bg-color;
 
 
 }
-.mid-book{
-
+.mid-bar{
+	width: 100%;
+	background-color: $bg-color;
+	min-width: 15%;
+	padding: 0px;
 }
 h3{
 	text-align:center;
@@ -146,5 +198,5 @@ footer{
 	z-index: 5;
 	background-color: white;
 	font-style: bold;
-
+	margin-top: 1%;
 }
