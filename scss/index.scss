@@ -144,8 +144,11 @@ nav a:first-child{
 }
 .about{
 	background-color: $bg-color;
-}
 
+}
+.about h4{
+	margin-left:1%;
+}
 .contact-info{
 	background-color: $bg-color;
 	font-family: $textfont;
@@ -158,7 +161,8 @@ nav a:first-child{
 	font-family: $scriptfont;
 }
 .bar{
-	background-color:$gold; 	
+	background-color:black;
+	color: $gold; 	
 }
 .bestsellers{
 	
@@ -176,6 +180,9 @@ nav a:first-child{
 }
 .left-bar{
 	background-color: $bg-color;
+}
+.left-bar h5{
+	margin-left: 1%;
 }
 .right-bar{
 	background-color: $bg-color;
