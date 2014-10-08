@@ -7,6 +7,11 @@
    		 <script src="js/vendor/modernizr.js"></script>
 		<link type:"text/css" rel="stylesheet" href="css/index.css">
 		<link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+
+	<script src="jquery-1.11.1.min.js"></script>
+
+
 	</head>
 
 	<body>
@@ -33,9 +38,20 @@
 		  </nav>
 		</div>
 		
-			<div class="row">
+		<div class="row">
 			<div class="large-3 columns">
-				<div class="bar">s
+				<div class="bar">
+					<div class="row">
+						<div class="large-3 columns">
+							&nbsp;
+						</div>
+						<div class="large-9 columns">
+							207-772-4045
+						</div>
+						<div class="large-1 columns">
+							
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="large-6 columns">		       
@@ -45,34 +61,84 @@
 			</div>
 			<div class="large-3 columns">
 				<div class="bar">
-					f
+					<div class="row">
+						<div class="large-2 columns">
+							&nbsp;
+							</div>
+						<div class="large-9 columns">
+							One Monument Way
+						</div>
+						<div class="large-1 columns">
+							
+						</div>
+					</div>
 				</div>
 			</div>	
 		</div>
 		<div class="row">
-			<div class="large-2 columns">
+			<div class="large-3 columns">
 				<div class="feature-bar">
 
-					<h5>Featured Books</h5>
+					<h3>Featured Books</h3>
 					<a href="books/index.html"><img src="img/swap.jpg"/>
 						<p>My Thinning Years <br>
 						Jon Derek Croteau<br>
 								$45.00
 						</p></a>
 					<a href="books/index.html">	<img src="img/wild.jpg"/>
-						<p>My Thinning Years <br>
-						Jon Derek Croteau<br>
-								$45.00
+						<p>Wild <br>
+						Cheryl Strayed<br>
+								$25.00
 						</p></a>
 
 					
 				</div>
 				
 			</div>
-			<div class="large-8 columns">
+			<div class="large-6 columns">
 				<div class="events">
 							<h3> Events</h3>
+						<div class="row">
+						<div class="large-1 columns">
+							&nbsp;
+						</div>
+						<div class="large-10 columns">
+							<div class="slider single-item">
+								<div>
+								<div class="row">
+								<div class="large-6 columns">
+									<h3><a href="books/index.html"><img src="img/mythinnningyears.jpg"/></a></h3>
+									</div>
+								<div class="large-6 columns">
+								<p>Jon Derek Croteau, Ed.D., is on a mission to make a difference and help those who are in need, disenfranchised, or impacted by discrimination. A senior partner at a leadership consultancy for higher education and healthcare clients across the globe, he is also deeply involved in several foundations and nonprofits, where he champions for equal rights and effective leadership. The author of three academic books on staff development and leadership as well as numerous articles for journals and periodicals, he is a highly sought-out speaker on the topics of eating disorder recovery, body image, and coming out. Jon legally married his partner, Justin Croteau, in 2007 and currently resides in Vermont.  Join us to hear Jon  share his inspiring journey first hand, ask your questions and get your books signed!</p>
+								</div>
+							
+							</div>
+						</div>
+							<div>
+								<div class="row">
+								<div class="large-6 columns">
+									<h3><a href="books/index.html"><img src="img/war.jpg"/></a></h3>
+									</div>
+								<div class="large-6 columns">
+								<p>Allan Levinsky, a Portland native, is a graduate of the University of Maine. He is the author of At Home with the General, about Maine's Civil War hero Joshua Chamberlain; A Short History of Portland; and The Night the Sky Turned Red, about the great Portland Fire of 1866. He works for the Maine Historical Society as a guide at the boyhood home of Henry Wadsworth Longfellow and has served as a volunteer for other historical organizations in Maine. Join us to hear all about this incredible piece of our Portland history, ask your questions and get your books signed!</p>
+								</div>
+							
+							</div>
+						</div>
+							
+							
+								</div>
+
+							</div>
+							</div>
+							<div class="large-1 columns">
+															&nbsp;
+
+						</div>
+					</div>
 							<div class="row">
+							
 								<div class="large-6 columns">
 									<a href="books/index.html"><img src="img/mythinnningyears.jpg"/></a>
 							<p>Jon Derek Croteau, Ed.D., is on a mission to make a difference and help those who are in need, disenfranchised, or impacted by discrimination. A senior partner at a leadership consultancy for higher education and healthcare clients across the globe, he is also deeply involved in several foundations and nonprofits, where he champions for equal rights and effective leadership. The author of three academic books on staff development and leadership as well as numerous articles for journals and periodicals, he is a highly sought-out speaker on the topics of eating disorder recovery, body image, and coming out. Jon legally married his partner, Justin Croteau, in 2007 and currently resides in Vermont.  Join us to hear Jon  share his inspiring journey first hand, ask your questions and get your books signed!</p>
@@ -115,7 +181,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="large-2 columns">
+			<div class="large-3 columns">
 				<div class="bestsellers">
 					<h3>Bestsellers </h3>
 					<ol>
@@ -155,11 +221,21 @@
 			</div>
 
 		</div>
-
-
+		
+		
 		<footer>
 Questions? Comments? Drop us a line at info@longfellowbooks.com. <br>
 Copyright © Longfellow Books
 	</footer>
+	 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+		$('.single-item').slick();
+		});
+    </script>
+
 	</body>
 </html>

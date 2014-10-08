@@ -2,6 +2,7 @@ $bg-color: #EBD8BA;
 $gold: #edb745;
 $scriptfont: "Libre Baskerville", serif;
 $textfont: "Aparajita Bold";
+
 body{
 	font-family: $textfont;
 		
@@ -107,8 +108,8 @@ nav a:first-child{
 	margin: 5px;
 }
 .bookclub img{
-	width: 40%;
-	height: 40%;
+	width: 50%;
+	height: 50%;
 	font-size: 500px;
 }
 .clubtitle{
@@ -117,8 +118,6 @@ nav a:first-child{
 }
 .events{
 	background-color: $bg-color;	
-
-
 }
 .events p{
 	margin: 5%;
@@ -126,6 +125,15 @@ nav a:first-child{
 .events img{
 	height: 60%;
 	width: 60%;
+}
+.book{
+	background-color: $bg-color;	
+}
+.book p{
+	margin: 5%;
+}
+.book img{
+
 }
 .bookclubs{
 
@@ -157,13 +165,17 @@ nav a:first-child{
 .search{
 	background-color: white;
 	border: 1px black solid;
-
+	margin: 2%;
 	font-family: $scriptfont;
 }
 .bar{
 	background-color:black;
-	color: $gold; 	
+	color: $gold; 
+		margin: 2%;
+		font-size: 1em;
+
 }
+
 .bestsellers{
 	
 	background-color: $bg-color;
@@ -189,6 +201,9 @@ nav a:first-child{
 
 
 }
+.about img{
+	border:1px solid $gold;
+}
 .mid-bar{
 	width: 100%;
 	background-color: $bg-color;
@@ -197,7 +212,17 @@ nav a:first-child{
 }
 h3{
 	text-align:center;
+	font-family: $scriptfont;
 }
+h4{
+		font-family: $scriptfont;
+
+}
+h5{
+		font-family: $scriptfont;
+
+}
+
 footer{
 	clear: both;
 	text-align: center;
