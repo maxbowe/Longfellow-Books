@@ -6,6 +6,9 @@
 		<link rel="stylesheet" href="../css/foundation_edits.css" />
    		 <script src="../js/vendor/modernizr.js"></script>
 		<link type:"text/css" rel="stylesheet" href="../css/index.css"></link>
+		<link rel='stylesheet' href='fullcalendar/fullcalendar.css' />
+		
+
 	</head>
 
 	<body>
@@ -84,6 +87,8 @@
 				<div class="event">
 				<h1>Events</h1>
 				Calender Module
+				<div id='calendar'>aa</div>
+
 				<!-- <div class="row">
 					<div class="large-3 columns">
 						<img src="../img/mythinnningyears.jpg"/>
@@ -171,5 +176,20 @@
 				<footer>
 Questions? Comments? Drop us a line at info@longfellowbooks.com. <br>
 Copyright © Longfellow Books		</footer>
+<script src='lib/jquery.min.js'></script>
+		<script src='lib/moment.min.js'></script>
+		<script src='fullcalendar/fullcalendar.js'></script>
+		<script type='text/javascript' src='fullcalendar/gcal.js'></script>
+   <script type="text/javascript">
+$(document).ready(function() {
+
+    // page is now ready, initialize the calendar...
+
+    $('#calendar').fullCalendar({
+	 events: 'https://www.google.com/calendar/feeds/maxbowe%40gmail.com/'
+	     })
+
+});
+	</script>
 	</body>
-</html>
+</html>	
