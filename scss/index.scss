@@ -88,6 +88,7 @@ nav a:first-child{
 	background-color: $bg-color;
 	min-width: 15%;
 	padding: 0px;
+	border: $gold 1px solid;
 }
 .feature-bar img{
 	width: 50%;
@@ -104,24 +105,49 @@ nav a:first-child{
 	background-color: $bg-color;
 	min-width: 15%;
 	padding: 0px;
+	border-right: $gold 1px solid;
+	border-left: $gold 1px solid;
+	border-bottom:$gold 1px solid;
+	text-align: center;
+	margin-top: -2%;
+	padding-top: 2%;
 }
 .bookclub p{
 	margin: 5px;
+
 }
 .bookclub img{
 	width: 50%;
 	height: 50%;
 	font-size: 500px;
 }
-.clubtitle{
+.clubinfo{
 	font-size: .75em;
-	font-style: bold;
+	
+	margin:4px;
+
+}
+.clubtitle{
+	font-size:1em;
+	font-variant: bold;
+
+}
+.verticalLine {
+    border-left: 2px solid black;
+    position: absolute;
+    left:5%;
+    height:100%;
 }
 .events{
-	background-color: $bg-color;	
+	background-color: $bg-color;
+		border-right: $gold 1px solid;
+	border-left: $gold 1px solid;
+	border-top:$gold 1px solid;
+	
 }
 .events p{
 	margin: 5%;
+	
 }
 .events img{
 	
@@ -178,8 +204,13 @@ nav a:first-child{
 
 
 }
+#bookclubpicks{
+	background-color: $bg-color;
 
+
+}
 .bestsellers{
+	border: $gold 1px solid;
 	
 	background-color: $bg-color;
 	-webkit-box-sizing: border-box;
