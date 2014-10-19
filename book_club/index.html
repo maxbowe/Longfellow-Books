@@ -4,9 +4,31 @@
 		<title> Longfellow Books</title>
 		<link rel="stylesheet" href="../css/foundation.css" />
 		<link rel="stylesheet" href="../css/foundation_edits.css" />
+		<link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
 
    		 <script src="../js/vendor/modernizr.js"></script>
 		<link type:"text/css" rel="stylesheet" href="../css/index.css"></link>
+        <script>
+            // show the given page, hide the rest
+            function show(elementID) {
+                // try to find the requested page and alert if it's not found
+                var ele = document.getElementById(elementID);
+                if (!ele) {
+                    alert("no such element");
+                    return;
+                }
+
+                // get all pages, loop through them and hide them
+                var pages = document.getElementsByClassName('page');
+                for(var i = 0; i < pages.length; i++) {
+                    pages[i].style.display = 'none';
+                }
+
+                // then show the requested page
+                ele.style.display = 'block';
+            }
+        </script>
+
 	</head>
 
 	<body>
@@ -22,7 +44,7 @@
 				    <ul class="right">
 				      
 				       <li><a href="../about/index.html">About</a></li>
-				       <li><a href="../book_club/index.html">Book Club</a></li>
+				       <li class="active"><a href="../book_club/index.html">Book Club</a></li>
 				       <li><a href="../ebooks/index.html">E-books</a></li>
 				       <li><a href="../events/index.html">Events</a></li>
 				       <li><a href="../staff_picks/index.html">Staff Picks</a></li>
@@ -34,77 +56,162 @@
 		  </nav>
 		</div>
 		<div class="row">
-			<div class="large-3 columns">
+			<div class="large-9 columns">
 				<div class="bar">
 					<div class="row">
-						<div class="large-3 columns">
+						<div class="large-1 columns">
 							&nbsp;
 						</div>
-						<div class="large-9 columns">
-							207-772-4045
-						</div>
-						<div class="large-1 columns">
+						<div class="large-11 columns">
+							207-772-4045 &nbsp; &nbsp;  							
+
+						<!-- </div>
+						<div class="large-3 columns"> -->
+							One Monument Way &nbsp;&nbsp;
+
+						<!-- </div>
+
+
+						<div class="large-3 columns"> -->
 							
+							info@longfellowbooks.com
+						<!-- </div>
+						<div class="large-2 columns"> -->
 						</div>
 					</div>
-				</div>
+				</div>	
 			</div>
-			<div class="large-6 columns">		       
+			<div class="large-3 columns">
 				<div class="search">
-					Search
+					<form>
+					  <input type="search" name="bookSearch">
+					</form>		
 				</div>
-			</div>
-			<div class="large-3 columns">
-				<div class="bar">
-					<div class="row">
-						<div class="large-2 columns">
-							&nbsp;
-							</div>
-						<div class="large-9 columns">
-							One Monument Way
-						</div>
-						<div class="large-1 columns">
-							
-						</div>
-					</div>
-				</div>
+
 			</div>	
 		</div>
 		<div class="row">
 		<div class="large-9 columns">
 				<div class="row" id="bookclubpicks">
-					<div class="large-4 columns">
-						<div class="left-bar">
+
+					<div class="large-4	 columns">
+						<div class="bookclubgroups">
 							<h4>Book Groups</h4>
-							The Mostly Harmless Book Group:
-							Box 'o' Chocolates Book Group:
-							Cook Book Book Club:
-							The International Book Group:
+							<span onclick="show('Page1');">The Mostly Harmless Book Group:</span> <br>
+				            <span onclick="show('Page2');">	Box o Chocolates Book Group:</span> <br>
+				            <span onclick="show('Page3');">Cook Book Book Club:</span> <br>
+							<span onclick="show('Page4');">the International Book Group:</span> <br>
+							
 						</div>
 
 
 					</div>
-					<div class="large-1 columns" >
-					</div>
+					
 
-					<div class="large-7 columns">
+					<div class="large-8 columns">
 
 						<div class="bookclub">
+								
 							
-							<div class="row" >
-								<div class="large-6 columns">
-									
-									<img src="../img/Dog_Stars.jpg"/>
-									<p>The Mostly Harmless Book Group:
-										We meet once a month to read and discuss books that are in the sci-fi/fantasy genre, although we've been told we push the boundaries on our definition of the genre  so be warned!
+								<div id="Page1" class="page" style="">
+									<div class="row">
+									<h4><i>The Mostly Harmless Book Group:</i></h4><hr>
+									<h5><b>'The Dog Stars'</b><br> by Peter Heller</h5>
+							</div>
+							<div class="row">
+									<div class="large-6 columns">
+										<img src="../img/Dog_Stars.jpg"/>
 
-										NEXT MEETING: Monday, Sept. 29th, 6pm at Longfellow Books
-
-										BOOK: 'The Dog Stars' by Peter Heller
-										  
-										Read More Here...</p>
+									</div>
+									<div class="large-6 columns">
+										<p>
+											We meet once a month to read and discuss books that are in the sci-fi/fantasy genre, although we've been told we push the boundaries on our definition of the genre  so be warned!<br>
+											<a>Read More Here...</a>
+											<br><br>
+											Monday, Sept. 29th, 6pm <br>at Longfellow Books
+											<br><br>
+											  <br>
+											</p>
+									</div>
 								</div>
+							</div>
+							
+								<div id="Page2" class="page" style="display:none">
+										<div class="row">
+											<h4><i>The International Book Group:</i></h4><hr>
+											<h5><b>'Unwanted'</b><br> by Kristina Ohlsson</h5>
+							</div>
+														<div class="row">
+
+									<div class="large-6 columns">
+										<img src="../img/unwanted.jpg"/>
+									</div>
+
+									<div class="large-6 columns">
+									
+									<p>
+										We meet once a month to read mysteries from
+										around the world and taste food from the book's
+										home country. <br>
+										<a>Read More Here...</a>	
+										<br>
+										Tuesday, October 28th, 6pm<br>at Longfellow Books
+										 
+										</p>	
+									</div>
+								</div>
+							</div>
+							
+								<div id="Page3" class="page" style="display:none">
+								<div class="row">
+											<h4><i>The International Book Group:</i></h4><hr>
+											<h5><b>'Wild'</b><br> by Cheryl Strayed</h5>
+											<h6>*Sponsored by Flatbread Pizza*</h6>
+								</div>
+									<div class="row">
+									<div class="large-6 columns">
+										<img src="../img/Wild.jpg"/>
+									</div>
 								<div class="large-6 columns">
+								<p>
+									Box 'o' Chocolates Book Group:
+									We meet once a month to eat pizza, drink some beer
+									and chat about our latest book pick.  We read a little
+									bit of everything so come by, share your thoughts,
+									and tell us what you want to read next
+									<br><a>Read More Here...</a><br>
+									Wednesday, October 8th, 7pm<br>at Longfellow Books
+									 
+									 	
+									</p>
+									</div>
+								</div>
+							</div>
+							
+								<div id="Page4" class="page" style="display:none">
+								<div class="row">
+											<h4><i>Cook Book Book Club</i></h4><hr>	
+											<h5><b>'Vietnamese Home Cooking'</b><br> by Charles Phan</h5>
+									</div>
+								<div class="row">
+									<div class="large-6 columns">
+										<img src="../img/Vietnamese_Home_Cooking.jpg"/>
+									</div>
+								<div class="large-6 columns">
+								<p>
+									On a monthly basis, we meet to discuss books about food.  We alternate between paperback memoirs and new hardcover cookbooks.
+									We politely request that before the meeting, you make at least one recipe from any cookbook being discussed.<br>
+									<a>Read More Here...</a><br>
+									 Thursday, September 18th, 6pm<br>
+									MEETING OFFSITE!
+
+									 
+									 
+									</p>
+									</div>
+								</div>
+							</div>
+								<!-- <div class="large-6 columns">
 									<img src="../img/unwanted.jpg"/>
 									<p>The International Book Group:
 										We meet once a month to read mysteries from
@@ -145,8 +252,7 @@
 									 
 									 
 									Read More Here...</p>
-							</div>
-					</div>
+							</div> -->
 				</div>
 			</div>
 		</div>
@@ -203,6 +309,6 @@
 		</div>
 				<footer>
 Questions? Comments? Drop us a line at info@longfellowbooks.com. <br>
-Copyright © Longfellow Books		</footer>
+Copyright &copy;	 Longfellow Books		</footer>
 	</body>
 </html>w
