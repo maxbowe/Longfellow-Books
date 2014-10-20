@@ -83,12 +83,14 @@ nav a:first-child{
 	border: $gold 2px solid;
 	padding: 2%;
 }
+
 .featured img{
 	width:50%;
 	height:50%;
 	position: relative;
 	left: 25%;
 }
+
 .name img{
 	
 }
@@ -122,11 +124,26 @@ nav a:first-child{
 	background-color: $bg-color;
 	min-width: 15%;
 	padding: 5px;
-
+	
 	padding-top: 2%;
 	z-index: 2;
 }
 .bookclub p{
+	margin: 5px;
+
+}
+.bookclubsmall{
+	width: 100%;
+	background-color: $bg-color;
+	min-width: 15%;
+	padding: 5px;
+	border-left: $border;
+	border-right: $border;
+	border-bottom: $border;
+	padding-top: 2%;
+	z-index: 2;
+}
+.bookclubsmall p{
 	margin: 5px;
 
 }
@@ -155,9 +172,23 @@ a{
 .events{
 	background-color: $bg-color;
 	border-left: $border;
+	border-right: $border;
+	border-top: $border;
+	padding-bottom: 2%;
+	z-index: 5;
+}
+.staffpicks{
+	background-color: $bg-color;
+	border-left: $border;
 
 	padding-bottom: 2%;
 	z-index: 5;
+}
+.staffpicks p{
+	left-margin: 5%;
+}
+.staffpicks img{
+	padding-left: 5%;
 }
 .events p{
 	left-margin: 5%;
@@ -315,7 +346,7 @@ hr{
 	color: black;
 }
 .carousel img{
-margin-top: 15%;
+margin-top: 0%;
 }
 .mid-bar{
 	width: 100%;
