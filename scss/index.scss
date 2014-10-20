@@ -3,6 +3,8 @@ $gold: #edb745;
 $foundationblack: #333333;
 $scriptfont: "Libre Baskerville", serif;
 $textfont: "Aparajita Bold";
+$border: $gold 1px solid;
+$blue:#003471;
 
 body{
 	font-family: $textfont;
@@ -102,7 +104,8 @@ nav a:first-child{
 	background-color: $bg-color;
 	min-width: 15%;
 	padding: 0px;
-	border: $gold 1px solid;
+	border: $border;
+	font-size: 1.3em;
 }
 .feature-bar img{
 	width: 50%;
@@ -151,7 +154,7 @@ a{
 }
 .events{
 	background-color: $bg-color;
-	border-left: $gold 1px solid;
+	border-left: $border;
 
 	padding-bottom: 2%;
 	z-index: 5;
@@ -167,7 +170,7 @@ a{
 }
 .book{
 	background-color: $bg-color;
-	border: $gold 1px solid;	
+	border: $border;	
 	padding-left: 2%;
 }
 .book h3{
@@ -192,7 +195,9 @@ margin-left: 5%;
 	padding-left: 30%;
 }
 .event{
-	background-color: $bg-color;	
+	background-color: $bg-color;
+	padding: 2%;
+	border: $border;	
 
 	
 }
@@ -233,7 +238,7 @@ margin-left: 5%;
 }
 #bookclubpicks{
 	background-color: $bg-color;
-		border: $gold 1px solid;
+		border: $border;
 
 
 }
@@ -241,7 +246,7 @@ hr{
 	border-color:#003471;
 }
 .bestsellers{
-	border: $gold 1px solid;
+	border: $border;
 	
 	background-color: $bg-color;
 	-webkit-box-sizing: border-box;
@@ -261,7 +266,19 @@ hr{
 }
 .left-bar{
 	background-color: $bg-color;
-		border: $gold 1px solid;	
+		border: $border;	
+
+}
+.usedbookbar{
+	background-color: $bg-color;
+		border: $border;
+		padding: 2%;	
+
+}
+.sortbooks{
+	background-color: $bg-color;
+		border: $border;
+		padding: 2%;	
 
 }
 .left-bar h5{
@@ -289,7 +306,7 @@ hr{
 	border:1px solid $gold;
 }
 .about{
-		border: $gold 1px solid;	
+		border: $border;	
 
 }
 .carousel{
@@ -319,7 +336,19 @@ h5{
 text-align:center;
 	font-family: $scriptfont;
 }
+a{
+		color:$blue;
 
+}
+a:hover{
+	color:$gold;
+}
+span{
+	color:$blue;
+}
+span:hover{
+	color: white;
+}
 footer{
 	margin-top: 1%;
 	clear: both;

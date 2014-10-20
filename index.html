@@ -8,6 +8,9 @@
 		<link type:"text/css" rel="stylesheet" href="css/index.css">
 		<link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+		<script src="/js/foundation.min.js"></script>
+
+
 
 	<script src="jquery-1.11.1.min.js"></script>
 
@@ -21,6 +24,7 @@
 				    <li class="name">
 				      <h1><a href="#">LongfellowBooks</a></h1>
 				    </li>
+				    <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
 				  </ul>
 
 				  <section class="top-bar-section">
@@ -165,7 +169,7 @@
 							Box 'o' Chocolates Book Club:
 							</div>
 						</div>
-						<div class="large-3 columns">
+						<div class="small-3 large-3 columns">
 							<div class="clubtitle">
 								Cook Book Book Club:
 
@@ -173,39 +177,39 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="large-3 columns">
+						<div class="small-3 large-3 columns">
 							<div class="clubinfo">
-								<img src="img/shambling.jpg"><br>
-								7 PM Sept 7th
+								<a><img src="img/shambling.jpg"><br>
+								7 PM Sept 7th</a>
 									
 							</div>
 
 
 						</div>
-						<div class="large-3 columns">
+						<div class="small-3 large-3 columns">
 							<div class="verticalLine">
 							</div>
-							<div class="clubtitle">
-								<img src="img/unwanted.jpg"><br>
-								8 PM Sept 15th
+							<div class="clubinfo">
+								<a href="book_club/index.html"><img src="img/unwanted.jpg"><br>
+								8 PM Sept 15th</a>
 							</div>
 						</div>
 
-						<div class="large-3 columns">
+						<div class="small-3 large-3 columns">
 							<div class="verticalLine">
 							</div>
-							<div class="clubtitle">
-								<img src="img/wild.jpg"><br>
-								6 PM Sept 23rd
+							<div class="clubinfo">
+								<a href="book_club/index.html"><img src="img/wild.jpg"><br>
+								6 PM Sept 23rd</a>
 
 							</div>
 						</div>
-						<div class="large-3 columns">
+						<div class="small-3 large-3 columns">
 							<div class="verticalLine">
 							</div>
-							<div class="clubtitle">
-								<img src="img/Vietnamese_Home_Cooking.jpg"><br>
-								5 PM September 31st
+							<div class="clubinfo">
+								<a href="book_club/index.html"><img src="img/Vietnamese_Home_Cooking.jpg"><br>
+								5 PM Sept 31st</a>
 							</div>
 						</div>
 					</div>
@@ -271,6 +275,9 @@ Copyright &copy;	 Longfellow Books
 		$('.single-item').slick();
 		});
     </script>
+    <script>
+  $(document).foundation();
+</script>
 
 	</body>
 </html>

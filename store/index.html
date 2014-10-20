@@ -6,7 +6,26 @@
 		<link rel="stylesheet" href="../css/foundation_edits.css" />
    		 <script src="../js/vendor/modernizr.js"></script>
    		<link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+   		<script>
+            // show the given page, hide the rest
+            function show(elementID) {
+                // try to find the requested page and alert if it's not found
+                var ele = document.getElementById(elementID);
+                if (!ele) {
+                    alert("no such element");
+                    return;
+                }
 
+                // get all pages, loop through them and hide them
+                var pages = document.getElementsByClassName('bookpage');
+                for(var i = 0; i < pages.length; i++) {
+                    pages[i].style.display = 'none';
+                }
+
+                // then show the requested page
+                ele.style.display = 'block';
+            }
+        </script>
 		<link type:"text/css" rel="stylesheet" href="../css/index.css"></link>
 	</head>
 
@@ -70,29 +89,30 @@
 		</div>
 		</div>	<div class="row">
 			<div class="large-3 columns">
-				<div class="left-bar">
-				<h3>Sort Our Books</h3>
+				<div class="sortbooks">
+				<h3>Sort  Books</h3>
 				<h6>Genre</h6>
 				<ul>
-					<li> Fiction</li>
-					<li>Non-Fiction</li>
-					<li> Horror</li>
-					<li> Biography</li>
-					<li> Fantasy</li>
+					<li><a> Fiction</li></a>
+					<li><a>Non-Fiction</li></a>
+					<li><a>Horror</li></a>
+					<li><a>Biography</li></a>
+					<li><a>Fantasy</li></a>
 				</ul>
 				<h6>Price</h6>
 				<ul>
-					<li>$0-$10</li>
-					<li>$10-$25</li>
-					<li>$25-$50</li>
-					<li>$50-$100</li>
-					<li>$100+</li>
+					<li><a>$0-$10</li></a>
+					<li><a>$10-$25</li></a>
+					<li><a>$25-$50</li></a>
+					<li><a>$50-$100</li></a>
+					<li><a>$100+</li></a>
 				</ul>
 			</div>
 			</div>
 			<div class="large-6 columns">
 			<div class="featured">
-				<div class="row">
+				<div id="Page1" class="bookpage" style="">
+					<div class="row">
 						<h3>Used Books</h3>
 							<div class="large-4 columns">
 								
@@ -117,17 +137,303 @@
 										</p></a>
 								</div>
 						</div>
+						<div class="row">
+							<div class="large-4 columns">
+								
+									<a href="../books/index.html"><img src="../img/dog_stars.jpg">
+										<p>Dog Stars <br>
+										Peter Heller<br>
+												$45.00
+										</p></a>
+							</div>
+							<div class="large-4 columns">
+									<a href="../books/index.html"><img src="../img/stillfool.jpg">
+										<p>Still Foolin You <br>
+										Billy Crystal<br>
+												$45.00
+										</p></a>
+							</div>
+							<div class="large-4 columns">
+									<a href="../books/index.html"><img src="../img/unwanted.jpg">
+										<p>Unwanted <br>
+										Kristina Ohlson<br>
+												$45.00
+										</p></a>
+								</div>
+						</div>	
+						<div class="row">
+							<div class="large-4 columns">
+								
+									<a href="../books/index.html"><img src="../img/shambling.jpg">
+										<p>Shambling Guide <br>
+										Mur Lafferty<br>
+												$45.00
+										</p></a>
+							</div>
+							<div class="large-4 columns">
+									<a href="../books/index.html"><img src="../img/war.jpg">
+										<p>War <br>
+										Allen Levinsky<br>
+												$45.00
+										</p></a>
+							</div>
+							<div class="large-4 columns">
+									<a href="../books/index.html"><img src="../img/Sycamore.jpg">
+										<p>Sycamore <br>
+										John Grisham<br>
+												$45.00
+										</p></a>
+								</div>
+						</div>					
+					</div>
+					<div id="Page2" class="bookpage" style="display:none">
+					<div class="row">
+						<h3>Used Books</h3>
+							<div class="large-4 columns">
+								
+									<a href="../books/index.html"><img src="../img/dog_stars.jpg">
+										<p>Dog Stars <br>
+										Peter Heller<br>
+												$45.00
+										</p></a>
+							</div>
+							<div class="large-4 columns">
+									<a href="../books/index.html"><img src="../img/unwanted.jpg">
+										<p>Unwanted <br>
+										Kristina Ohlson<br>
+												$45.00
+										</p></a>
+								</div>
+							<div class="large-4 columns">
+									<a href="../books/index.html"><img src="../img/stillfool.jpg">
+										<p>Still Foolin You <br>
+										Billy Crystal<br>
+												$45.00
+										</p></a>
+							</div>
+						</div>
+						<div class="row">
+							<div class="large-4 columns">
+								
+									<a href="../books/index.html"><img src="../img/shambling.jpg">
+										<p>Shambling Guide <br>
+										Mur Lafferty<br>
+												$45.00
+										</p></a>
+							</div>
+							<div class="large-4 columns">
+									<a href="../books/index.html"><img src="../img/war.jpg">
+										<p>War <br>
+										Allen Levinsky<br>
+												$45.00
+										</p></a>
+							</div>
+							<div class="large-4 columns">
+									<a href="../books/index.html"><img src="../img/Sycamore.jpg">
+										<p>Sycamore <br>
+										John Grisham<br>
+												$45.00
+										</p></a>
+								</div>
+						</div>	
+						<div class="row">
+							<div class="large-4 columns">
+								
+									<a href="../books/index.html"><img src="../img/mythinnningyears.jpg">
+										<p>My Thinning Years <br>
+										Jon Derek Croteau<br>
+												$45.00
+										</p></a>
+							</div>
+							<div class="large-4 columns">
+									<a href="../books/index.html"><img src="../img/swap.jpg">
+										<p>The Swap <br>
+										Megan Shule<br>
+												$45.00
+										</p></a>
+							</div>
+							<div class="large-4 columns">
+									<a href="../books/index.html"><img src="../img/wild.jpg">
+										<p>Wild <br>
+										Jeane Davis<br>
+												$45.00
+										</p></a>
+								</div>
+						</div>	
+					</div>
+					<div id="Page3" class="bookpage" style="display:none">
+					<div class="row">
+						<h3>Used Books</h3>
+							<div class="large-4 columns">
+								
+									<a href="../books/index.html"><img src="../img/shambling.jpg">
+										<p>Shambling Guide <br>
+										Mur Lafferty<br>
+												$45.00
+										</p></a>
+							</div>
+							<div class="large-4 columns">
+									<a href="../books/index.html"><img src="../img/war.jpg">
+										<p>War <br>
+										Allen Levinsky<br>
+												$45.00
+										</p></a>
+							</div>
+							<div class="large-4 columns">
+									<a href="../books/index.html"><img src="../img/Sycamore.jpg">
+										<p>Sycamore <br>
+										John Grisham<br>
+												$45.00
+										</p></a>
+								</div>
+						</div>
+						<div class="row">
+							<div class="large-4 columns">
+								
+									<a href="../books/index.html"><img src="../img/mythinnningyears.jpg">
+										<p>My Thinning Years <br>
+										Jon Derek Croteau<br>
+												$45.00
+										</p></a>
+							</div>
+							<div class="large-4 columns">
+									<a href="../books/index.html"><img src="../img/swap.jpg">
+										<p>The Swap <br>
+										Megan Shule<br>
+												$45.00
+										</p></a>
+							</div>
+							<div class="large-4 columns">
+									<a href="../books/index.html"><img src="../img/wild.jpg">
+										<p>Wild <br>
+										Jeane Davis<br>
+												$45.00
+										</p></a>
+								</div>
+						</div>	
+						<div class="row">
+							<div class="large-4 columns">
+								
+									<a href="../books/index.html"><img src="../img/dog_stars.jpg">
+										<p>Dog Stars <br>
+										Peter Heller<br>
+												$45.00
+										</p></a>
+							</div>
+							<div class="large-4 columns">
+									<a href="../books/index.html"><img src="../img/unwanted.jpg">
+										<p>Unwanted <br>
+										Kristina Ohlson<br>
+												$45.00
+										</p></a>
+								</div>
+							<div class="large-4 columns">
+									<a href="../books/index.html"><img src="../img/stillfool.jpg">
+										<p>Still Foolin You <br>
+										Billy Crystal<br>
+												$45.00
+										</p></a>
+									</div>
+						</div>	
+					</div>
+					<div id="Page4" class="bookpage" style="display:none">
+					<div class="row">
+						<h3>Used Books</h3>
+						<div class="large-4 columns">
+								
+									<a href="../books/index.html"><img src="../img/mythinnningyears.jpg">
+										<p>My Thinning Years <br>
+										Jon Derek Croteau<br>
+												$45.00
+										</p></a>
+							</div>
+							<div class="large-4 columns">
+									<a href="../books/index.html"><img src="../img/swap.jpg">
+										<p>The Swap <br>
+										Megan Shule<br>
+												$45.00
+										</p></a>
+							</div>
+							<div class="large-4 columns">
+									<a href="../books/index.html"><img src="../img/wild.jpg">
+										<p>Wild <br>
+										Jeane Davis<br>
+												$45.00
+										</p></a>
+								</div>
+							
+						</div>
+						<div class="row">
+							<div class="large-4 columns">
+								
+									<a href="../books/index.html"><img src="../img/dog_stars.jpg">
+										<p>Dog Stars <br>
+										Peter Heller<br>
+												$45.00
+										</p></a>
+							</div>
+							<div class="large-4 columns">
+									<a href="../books/index.html"><img src="../img/unwanted.jpg">
+										<p>Unwanted <br>
+										Kristina Ohlson<br>
+												$45.00
+										</p></a>
+								</div>
+							<div class="large-4 columns">
+									<a href="../books/index.html"><img src="../img/stillfool.jpg">
+										<p>Still Foolin You <br>
+										Billy Crystal<br>
+												$45.00
+										</p></a>
+									</div>
+							
+						</div>	
+						<div class="row">
+							<div class="large-4 columns">
+								
+									<a href="../books/index.html"><img src="../img/shambling.jpg">
+										<p>Shambling Guide <br>
+										Mur Lafferty<br>
+												$45.00
+										</p></a>
+							</div>
+							<div class="large-4 columns">
+									<a href="../books/index.html"><img src="../img/war.jpg">
+										<p>War <br>
+										Allen Levinsky<br>
+												$45.00
+										</p></a>
+							</div>
+							<div class="large-4 columns">
+									<a href="../books/index.html"><img src="../img/Sycamore.jpg">
+										<p>Sycamore <br>
+										John Grisham<br>
+												$45.00
+										</p></a>
+								</div>
+						</div>		
+					</div>
+					<div class="row">
+						<div class="large-9 columns">
+						</div>
+						<div class="large-3 columns">
+							Page <a><span onclick="show('Page1');">1</span></a>,
+				            <a><span onclick="show('Page2');">2</span></a>,
+				           <a> <span onclick="show('Page3');">3</span></a>, 
+							<a><span onclick="show('Page4');">4</span></a> 
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="large-3 columns">
-				<div class="left-bar">
+				<div class="usedbookbar">
 					<h5> Used Book Buying Policy</h5>
 					<div class="policy">
 					<ul><li>We pay store credit for used books.</li>
-					<li>We pay 40% of the price we intend to charge for a book; so if, for example, you bring us a trade paperback in good condition whose cover price is $15, we'll most likely charge $7.50 for it, which means we'll give you $3 in credit for it. (The calculus to determine the price we'll charge for a book gets wigglier as the cover price rises.)</li>
+					<li>We pay 40% of the price we intend to charge for a book</li>
 					<li>You can drop off books whenever we're open; we request that you only drop off a few boxes or bags at a time.</li>
 					<li>Appointments can be made in advance to look through your books while you wait.</li>
-					<li>However, we usually will not buy moldy (or otherwise stinky) books, magazines, books with split spines or which are otherwise falling apart, books with underlining or highlighting, textbooks, or outdated reference books (including travels guides and Time Life or National Geographic books).</li>
+					<li>However, we usually will not books in poor condition or outdated reference books.</li>
 					<li>We can either give the books we don't take back to you or donate them to the library's used book sale; let us know which you'd prefer. </li>
 					<li>Unless we are buried unusually deeply under an avalanche of beautiful used books, we will usually call you about your books within a week or so.</li></p></ul>
 						</div>
