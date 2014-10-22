@@ -77,6 +77,11 @@ nav a:first-child{
 	margin-bottom: 2%;
 	border: 1px solid $gold;
 }
+.search .button{
+	background-color: $foundationblack;
+	color: $gold;
+	font-family: $scriptfont;
+}
 .ebooks{
 	font-family: $textfont;
 	background-color: $bg-color;
@@ -90,7 +95,17 @@ nav a:first-child{
 	position: relative;
 	left: 25%;
 }
+.sociallinks{
 
+}
+.logo{
+	margin-bottom: 5%;
+	margin-top: 3%;
+}
+.sociallinks img{
+	padding-top: 1%;
+	padding-left: 1%;
+}
 .name img{
 	
 }
@@ -257,11 +272,15 @@ margin-left: 5%;
 	margin-top: 3%;
 	margin-bottom: 1%;
 }
+.nextpage{
+	font-family: $scriptfont;
+	font-size: 1.1em;
+}
 .bar{
 	background-color: $foundationblack;
 	color: $gold; 
 		margin-top: 1%;
-		font-size: 1.1em;
+		font-size: .9em;
 			font-family: $scriptfont;
 			padding: .75%;
 	
@@ -300,6 +319,10 @@ hr{
 		border: $border;	
 
 }
+.ads{
+		margin-top: 5%;
+
+}
 .usedbookbar{
 	background-color: $bg-color;
 		border: $border;
@@ -316,10 +339,14 @@ hr{
 	margin-left: 1%;
 }
 .staffpickbar{
-
+font-family: $scriptfont;
+	font-size: .8em;
+	text-align: left;
 }
 .bookclubgroups{
 	background-color: $bg-color;
+	font-family: $scriptfont;
+	font-size: .8em;
 
 }
 .bookclubgroups{
@@ -344,6 +371,7 @@ hr{
 
 	background-color: $gold;
 	color: black;
+	border: #800000 solid 2px;
 }
 .carousel img{
 margin-top: 0%;
@@ -354,15 +382,23 @@ margin-top: 0%;
 	min-width: 15%;
 	padding: 0px;
 }
+#booktype{
+	font-family: $scriptfont;
+}
 h3{
 	text-align:center;
-	font-family: $scriptfont;
+		font-family: $scriptfont;
+
 }
 h4{
 	text-align: center;
 		font-family: $scriptfont;
 
 }
+.incarousel{
+	padding: 1%;
+}
+
 h5{
 text-align:center;
 	font-family: $scriptfont;
@@ -372,13 +408,13 @@ a{
 
 }
 a:hover{
-	color:$gold;
+	color: #005bc6;
 }
 span{
 	color:$blue;
 }
 span:hover{
-	color: white;
+	color:  #005bc6;
 }
 footer{
 	margin-top: 1%;
@@ -386,9 +422,42 @@ footer{
 	text-align: center;
 	width: 500px;
 	background-color: $foundationblack;
-	height:50px;
 	width:100%;
 	z-index: 5;
 	color: $gold;
 	font-style: bold;
+}
+footer img{
+	margin-top: 3%;
+	margin-left: 5%;
+}
+
+@media only screen and (max-width: 40em) { 
+	.bar{
+		margin-bottom: 2%;
+		margin-top: 7.5%;	
+		font-size: .75em;
+		padding-top: 3%;
+	}
+	.ad{
+		margin: 0%;
+	}
+	.search{
+		margin-top: -1%;
+	}
+	footer img{
+		margin-top: 20%;
+	}
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em){
+	.bar{
+		margin-bottom: 2%;
+		margin-top: 7.5%;
+		font-size: .9em;
+		padding-top: 0%;
+	}
+	.search{
+		margin-top: -1%;
+	}
+	
 }
