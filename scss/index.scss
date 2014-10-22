@@ -5,6 +5,7 @@ $scriptfont: "Libre Baskerville", serif;
 $textfont: "Aparajita Bold";
 $border: $gold 1px solid;
 $blue:#003471;
+$red:#800000;
 
 body{
 	font-family: $textfont;
@@ -66,8 +67,9 @@ nav a:first-child{
 
 }
 .ad img{
-	margin-left: 15%;
-	margin-bottom: 2%;
+	width: 100%;
+	margin-bottom: 5%;
+	border: 1px solid $gold;
 }
 .featured{
 	width: 100%;
@@ -76,20 +78,50 @@ nav a:first-child{
 	padding: 0px;
 	margin-bottom: 2%;
 	border: 1px solid $gold;
+			border-radius: 1em;
+
+
 }
+.featured h3{
+	font-size: .95em;
+}
+.usedbooks{
+	width: 100%;
+	background-color: $bg-color;
+	min-width: 15%;
+	padding: 0px;
+	margin-bottom: 2%;
+	border: 1px solid $gold;
+			border-radius: 1em;
+
+
+}
+
 .search .button{
 	background-color: $foundationblack;
 	color: $gold;
 	font-family: $scriptfont;
+		border-radius: 1em;
+		font-size: 1.2em;
+		padding: 3%;
+
 }
 .ebooks{
 	font-family: $textfont;
 	background-color: $bg-color;
 	border: $gold 2px solid;
 	padding: 2%;
+	border-radius: 1em;
+
 }
 
 .featured img{
+	width:50%;
+	height:50%;
+	position: relative;
+	left: 25%;
+}
+.usedbooks img{
 	width:50%;
 	height:50%;
 	position: relative;
@@ -113,9 +145,14 @@ nav a:first-child{
 	text-align: center;
 
 }
+.usedbooks p{
+	text-align: center;
+
+}
 .page h6{
 	text-align: center;
 }
+
 .feature-bar {
 	width: 100%;
 	background-color: $bg-color;
@@ -123,6 +160,7 @@ nav a:first-child{
 	padding: 0px;
 	border: $border;
 	font-size: 1.3em;
+	border-radius: 1em;
 }
 .feature-bar img{
 	width: 50%;
@@ -134,12 +172,16 @@ nav a:first-child{
 	font-size: .75em;
 	text-align: center;
 }
+.feature-bar h3{
+	font-size: .95em;
+}
 .bookclub{
 	width: 100%;
 	background-color: $bg-color;
 	min-width: 15%;
 	padding: 5px;
-	
+	border-radius: 1em;
+
 	padding-top: 2%;
 	z-index: 2;
 }
@@ -157,6 +199,8 @@ nav a:first-child{
 	border-bottom: $border;
 	padding-top: 2%;
 	z-index: 2;
+		border-radius: 1em;
+
 }
 .bookclubsmall p{
 	margin: 5px;
@@ -181,9 +225,15 @@ nav a:first-child{
     left:5%;
     height:100%;
 }
+.bar .verticalLine{
+	height: 100%;
+	position: relative;
+	border-left: 2px solid black;
+}
 a{
 	color: #003471;
 }
+
 .events{
 	background-color: $bg-color;
 	border-left: $border;
@@ -191,6 +241,9 @@ a{
 	border-top: $border;
 	padding-bottom: 2%;
 	z-index: 5;
+		border-radius: 1em;
+
+
 }
 .staffpicks{
 	background-color: $bg-color;
@@ -211,6 +264,10 @@ a{
 
 	
 }
+.pick img{
+	height:75%;
+	width: 75%;
+}
 .events img{
 	
 }
@@ -218,6 +275,8 @@ a{
 	background-color: $bg-color;
 	border: $border;	
 	padding-left: 2%;
+				border-radius: 1em;
+
 }
 .book h3{
 	text-align: right;
@@ -243,7 +302,9 @@ margin-left: 5%;
 .event{
 	background-color: $bg-color;
 	padding: 2%;
-	border: $border;	
+	border: $border;
+				border-radius: 1em;
+	
 
 	
 }
@@ -256,6 +317,8 @@ margin-left: 5%;
 }
 .about{
 	background-color: $bg-color;
+				border-radius: 1em;
+
 
 }
 .about h4{
@@ -264,36 +327,56 @@ margin-left: 5%;
 .contact-info{
 	background-color: $bg-color;
 	font-family: $textfont;
+				border-radius: 1em;
+
 
 }
 .search{
 	font-family: $scriptfont;
-	font-size: .6em;
-	margin-top: 3%;
+		
+	margin-top: 9%;
 	margin-bottom: 1%;
+
 }
 .nextpage{
 	font-family: $scriptfont;
 	font-size: 1.1em;
 }
 .bar{
-	background-color: $foundationblack;
-	color: $gold; 
-		margin-top: 1%;
-		font-size: .9em;
-			font-family: $scriptfont;
+	background-color: $gold;
+	color: $foundationblack; 
+		margin-top: 3%;
+		font-size: 1.2em;
+			font-family: $textfont;
 			padding: .75%;
+				border-radius: 1em;
+				text-align: center;
+
 	
 
 }
 #bookclubpicks{
 	background-color: $bg-color;
 		border: $border;
+			border-radius: 1em;
 
 
 }
+.ebooks h4{
+	font-size: 1.1em;
+}
+#bookclubpicks img{
+	width: 75%;
+	height: 75%;
+}
+#bookclubpicks p{
+	padding: 5%;
+}
+#bookclubpicks h4{
+	font-size: 1.5em;
+}
 hr{
-	border-color:#003471;
+	border-color:$red;
 }
 .bestsellers{
 	border: $border;
@@ -303,37 +386,58 @@ hr{
 	min-width: 15%;
 	z-index:3;
 	padding: 0px;
+		border-radius: 1em;
+
+}
+.bestsellers h3{
+	font-size: 1.3em;
 }
 .bestsellers ol{
 	padding-left: 5%;
 	padding-right: 5%;
+	border-radius: 1em;
+
 }
 #authortext{
 	font-size: 12px;
 }
 .top10{
 	font-size:14px;
+			border-radius: 1em;
+
 }
 .left-bar{
 	background-color: $bg-color;
 		border: $border;	
+			border-radius: 1em;
 
 }
-.ads{
+.left-bar h4
+{
+font-size: 1.2em; }
+.ads img{
 		margin-top: 5%;
-
 }
 .usedbookbar{
 	background-color: $bg-color;
 		border: $border;
 		padding: 2%;	
+			border-radius: 1em;
 
 }
 .sortbooks{
 	background-color: $bg-color;
 		border: $border;
-		padding: 2%;	
-
+		padding: 2%;
+		padding-left: 5%;	
+			border-radius: 1em;
+			font-family: $scriptfont;
+}
+.sortbooks ul{
+	padding-left: 10%;
+}
+.sortbooks h3{
+	font-size: 1.2em;
 }
 .left-bar h5{
 	margin-left: 1%;
@@ -343,10 +447,14 @@ font-family: $scriptfont;
 	font-size: .8em;
 	text-align: left;
 }
+.staffpickbar h4{
+	font-size: 1.5em;
+}
 .bookclubgroups{
 	background-color: $bg-color;
 	font-family: $scriptfont;
 	font-size: .8em;
+			border-radius: 1em;
 
 }
 .bookclubgroups{
@@ -367,11 +475,14 @@ font-family: $scriptfont;
 		border: $border;	
 
 }
+.about h4{
+	font-size: 1.2em
+}
 .carousel{
 
 	background-color: $gold;
 	color: black;
-	border: #800000 solid 2px;
+	/*border: #800000 solid 2px;*/
 }
 .carousel img{
 margin-top: 0%;
@@ -397,6 +508,14 @@ h4{
 }
 .incarousel{
 	padding: 1%;
+	font-size: 1em;
+	font-family: $textfont;
+}
+.datecarousel{
+	font-size: 1.1em;
+		font-family: $scriptfont;
+		text-align: center;
+
 }
 
 h5{
@@ -428,7 +547,7 @@ footer{
 	font-style: bold;
 }
 footer img{
-	margin-top: 3%;
+	margin-top: 2%;
 	margin-left: 5%;
 }
 
@@ -437,13 +556,13 @@ footer img{
 		margin-bottom: 2%;
 		margin-top: 7.5%;	
 		font-size: .75em;
-		padding-top: 3%;
+		padding-top: 1%;
 	}
 	.ad{
 		margin: 0%;
 	}
 	.search{
-		margin-top: -1%;
+		margin-top: 7%;
 	}
 	footer img{
 		margin-top: 20%;
@@ -452,12 +571,12 @@ footer img{
 @media only screen and (min-width: 40.063em) and (max-width: 64em){
 	.bar{
 		margin-bottom: 2%;
-		margin-top: 7.5%;
+		margin-top: 2%;
 		font-size: .9em;
-		padding-top: 0%;
+		padding-top: 1%;
 	}
 	.search{
-		margin-top: -1%;
+		margin-top: 7%;
 	}
 	
 }
