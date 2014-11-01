@@ -1,9 +1,10 @@
-$bg-color: #EBD8BA;
+$bg-color: #e3e3e5;
+$page-bg: #e3e3e3;
 $gold: #edb745;
 $foundationblack: #333333;
 $scriptfont: "Libre Baskerville", serif;
 $textfont: "Aparajita Bold";
-$border: $gold 1px solid;
+$border: black 1px solid;
 $blue:#003471;
 $red:#800000;
 
@@ -12,7 +13,7 @@ body{
 		
 
 	color:#363636;
-	background-color: #e3e3e3;
+	background-color: $page-bg;
 	background-image:url() ;
 
 }
@@ -158,9 +159,13 @@ nav a:first-child{
 	background-color: $bg-color;
 	min-width: 15%;
 	padding: 0px;
-	border: $border;
+	border-right: $border;
+	/*border-top:$border;*/
+	border-bottom: $border;
 	font-size: 1.3em;
-	border-radius: 1em;
+	border-radius: .5em;
+	padding-top: 3px;
+	padding-bottom: 3px;
 }
 .feature-bar img{
 	width: 50%;
@@ -196,8 +201,8 @@ nav a:first-child{
 	padding: 5px;
 	border-left: $border;
 	border-right: $border;
-	border-bottom: $border;
-	padding-top: 2%;
+/*	border-bottom: $border;
+*/	padding-top: 2%;
 	z-index: 2;
 		border-radius: 1em;
 
@@ -238,7 +243,6 @@ a{
 	background-color: $bg-color;
 	border-left: $border;
 	border-right: $border;
-	border-top: $border;
 	padding-bottom: 2%;
 	z-index: 5;
 		border-radius: 1em;
@@ -379,14 +383,16 @@ hr{
 	border-color:$red;
 }
 .bestsellers{
-	border: $border;
+	border-left: $border;
 	
 	background-color: $bg-color;
-	-webkit-box-sizing: border-box;
+	/*-webkit-box-sizing: border-box;*/
 	min-width: 15%;
 	z-index:3;
-	padding: 0px;
-		border-radius: 1em;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	border-radius: .5em;
+
 
 }
 .bestsellers h3{
@@ -395,7 +401,6 @@ hr{
 .bestsellers ol{
 	padding-left: 5%;
 	padding-right: 5%;
-	border-radius: 1em;
 
 }
 #authortext{
